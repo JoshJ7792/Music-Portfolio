@@ -33,11 +33,15 @@ export const highlights = [
   },
   { value: "Winner", label: "Yamaha Young Performing Artists", year: "2026" },
   {
-    value: "Aspen",
+    value: "Aspen Music Festival",
     label: "Asst. Principal Oboe & English Horn",
     year: "2026",
   },
-  { value: "Sarasota", label: "Principal Oboe & English Horn", year: "2026" },
+  {
+    value: "Sarasota Music Festival",
+    label: "Principal Oboe & English Horn",
+    year: "2026",
+  },
 ];
 
 export type Role = {
