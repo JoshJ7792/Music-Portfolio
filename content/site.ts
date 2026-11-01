@@ -21,7 +21,7 @@ export const bio = {
   paragraphs: [
     "A Nashville-based freelancer since 2023, Joshua performs as substitute second oboe with the Nashville Opera Orchestra, second oboe with the period ensemble Early Music City, and principal oboe of the Blair Sinfonietta.",
     "In summer 2026, Joshua served as assistant principal oboe and English horn at the Aspen Music Festival and School, following a residency as principal oboe and English horn at the Sarasota Music Festival. A dedicated chamber musician, Joshua has played in the Blair School of Music Wind Quintet since 2023, coached by Jared Hauser, Mariam Adam, and Peter Kolkay.",
-    "Joshua is pursuing a Bachelor of Musical Arts in Oboe Performance alongside a second major in Computer Science at Vanderbilt University's Blair School of Music, studying with Jared Hauser as a Blair Merit Scholar. Before Vanderbilt, Joshua studied with Erin Hannigan, principal oboe of the Dallas Symphony Orchestra.",
+    "Joshua is pursuing a Bachelor of Musical Arts in Oboe Performance alongside a second major in Computer Science at Vanderbilt University's Blair School of Music, studying with Jared Hauser, former Principal Oboist of the Orlando Philharmonic and Principal Oboist of the Nashville Opera. Before Vanderbilt, Joshua studied with Erin Hannigan, former principal oboe of the Dallas Symphony Orchestra and Professor of Oboe at Rice University's Shepherd School of Music.",
   ],
 };
 
@@ -171,18 +171,18 @@ export type Video = { youtubeId: string; title: string; detail?: string };
 // The first video is shown large.
 export const videos: Video[] = [
   {
-    youtubeId: "Gw2UCNYUVqk",
-    title:
-      "Pasculli — Concerto sopra motivi dell'opera “La favorita” di Donizetti",
+    youtubeId: "Q1Rt6jzXB14",
+    title: "Mozart — Oboe Concerto in C major, K. 314",
+    detail: "Greater Dallas Youth Orchestra",
   },
   {
     youtubeId: "GH33DPlCebc",
     title: "Strauss — Oboe Concerto in D major, I. Allegro moderato",
   },
   {
-    youtubeId: "Q1Rt6jzXB14",
-    title: "Mozart — Oboe Concerto in C major, K. 314",
-    detail: "Greater Dallas Youth Orchestra",
+    youtubeId: "Gw2UCNYUVqk",
+    title:
+      "Pasculli — Concerto sopra motivi dell'opera “La favorita” di Donizetti",
   },
   {
     youtubeId: "E9kioKfgHpw",

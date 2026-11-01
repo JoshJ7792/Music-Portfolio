@@ -17,7 +17,16 @@ function YouTube({ video, feature }: { video: Video; feature: boolean }) {
           />
         ) : (
           <button className="video__poster" onClick={() => setPlaying(true)} aria-label={`Play ${video.title}`}>
-            <img src={`https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`} alt="" loading="lazy" />
+            {/* 1280×720 thumbnail; older uploads may lack it, so fall back to the 480×360 one. */}
+            <img
+              src={`https://i.ytimg.com/vi/${video.youtubeId}/maxresdefault.jpg`}
+              alt=""
+              loading="lazy"
+              onError={(e) => {
+                const img = e.currentTarget;
+                if (!img.src.includes("hqdefault")) img.src = `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`;
+              }}
+            />
             <span className="video__play" aria-hidden />
           </button>
         )}
