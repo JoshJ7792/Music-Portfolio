@@ -405,8 +405,41 @@ p {
   background: var(--ink-2);
 }
 .highlight {
-  padding: 40px clamp(20px, 3vw, 40px);
   border-left: 1px solid var(--line);
+}
+.highlight__inner {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 40px clamp(20px, 3vw, 40px);
+  text-decoration: none;
+}
+.highlight__inner--link {
+  transition: background 0.4s;
+}
+.highlight__inner--link:hover {
+  background: var(--brass-soft);
+}
+.highlight__inner--link .highlight__value {
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 163, 92, 0.4);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  transition: text-decoration-color 0.3s;
+}
+.highlight__inner--link:hover .highlight__value {
+  text-decoration-color: var(--brass);
+}
+.highlight__arrow {
+  position: absolute;
+  top: 34px;
+  right: clamp(20px, 3vw, 40px);
+  color: var(--brass);
+  font-size: 18px;
+  transition: transform 0.3s var(--ease);
+}
+.highlight__inner--link:hover .highlight__arrow {
+  transform: translate(3px, -3px);
 }
 .highlight:first-child {
   border-left: 0;

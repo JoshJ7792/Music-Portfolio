@@ -25,22 +25,38 @@ export const bio = {
   ],
 };
 
-export const highlights = [
+// Add a `link` to make a highlight clickable (opens in a new tab).
+export type Highlight = {
+  value: string;
+  label: string;
+  year: string;
+  link?: string;
+};
+
+export const highlights: Highlight[] = [
   {
     value: "1st Prize",
     label: "ENKOR International Music Competition",
     year: "2026",
+    link: "https://www.enkorcompetition.com/2026/05/joshua-jung-first-prize-winds.html",
   },
-  { value: "Winner", label: "Yamaha Young Performing Artists", year: "2026" },
+  {
+    value: "Winner",
+    label: "Yamaha Young Performing Artists",
+    year: "2026",
+    link: "https://usa.yamaha.com/education/yypa/index.html",
+  },
   {
     value: "Aspen Music Festival",
     label: "Asst. Principal Oboe & English Horn",
     year: "2026",
+    link: "https://www.aspenmusicfestival.com/images/uploads/pdfs/AMFS_2026_Full_Wrap.pdf",
   },
   {
     value: "Sarasota Music Festival",
     label: "Principal Oboe & English Horn",
     year: "2026",
+    link: "https://www.sarasotaorchestra.org/festival/concerts/past-concerts",
   },
 ];
 
@@ -166,6 +182,9 @@ export const education = {
     "Andrea Ridilla",
     "Jung Choi",
     "Nicholas Stovall",
+    "Ryan Roberts",
+    "Lani Smith",
+    "Frank Rosenwein",
   ],
 };
 
